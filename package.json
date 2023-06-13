@@ -1,0 +1,27 @@
+{
+  "name": "projet_citation",
+  "version": "1.0.0",
+  "description": "Ce projet est un projet qui permet d'avoir des citations de manière aléatoire",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Berekia Obed",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.2",
+    "xlsx": "^0.18.5"
+  }
+}

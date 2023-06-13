@@ -1,0 +1,46 @@
+
+<%- include('./partials/header.ejs') %>
+
+<div class="container mx-auto p-4">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+        <form action="/citationAdd" method="POST">
+
+            <h2 class="text-gray-700 font-bold">Ajouter une citation</h2>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="citation">Citation :</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="texte"   placeholder="Texte de la citation" ></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nom">Nom :</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="auteur" type="text" placeholder="Auteur de la citation">
+            </div>
+            
+            
+            
+            <div class="flex justify-end">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Envoyer
+                </button>
+            </div>
+        </form>
+          
+        ou 
+
+
+        <form action="/citations/import" method="POST" enctype="multipart/form-data">
+
+            <h2 class="text-gray-700 font-bold">Importer un fichier excel contenant toutes vos citations</h2>  
+            
+            <div class="mb-4">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="file" type="file"  placeholder="Entrez votre citation">
+            </div>
+            <div class="flex justify-end">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Envoyer
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

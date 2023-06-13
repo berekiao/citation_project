@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-gray-100">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="max-w-md bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-2xl font-bold mb-6">Connexion</h2>
+      
+      <form action="/users/login" method="POST">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" >Name :</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="username" type="text" placeholder="Entrez votre name">
+        </div>
+        
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">Mot de passe :</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password" type="password" placeholder="Entrez votre mot de passe">
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Connexion
+          </button>
+          <a class="text-sm text-blue-500 hover:text-blue-600" href="/signup">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
